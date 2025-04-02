@@ -1,0 +1,23 @@
+Requirements
+----------------
+1. An input field to add new tasks.
+2. A button to submit the new task.
+3. A list to display all the tasks.
+4. Each task should have a way to mark it as completed (like a checkbox).
+5. An option to delete tasks.
+
+
+
+Learning
+----------------
+
+1. Spread operator is used to create shallow copy and then modify that copy instead of changing the original which helps react to track when to update state by comparing old and new state
+2. You always write functions above the return statement. Return statement only renders the html
+3. You always use {} to write JS in jsx
+4. Controlled vs Un Controlled components
+5. For Controlled components you must be using input Handler. For input fields you should be using event handelers to deal with input change in the field as it is a controlled component and react can't remember its value. You can do that by a function that takes event as a parameter and sets the value using event.target.value. And then you should call this function on the on change of the input field
+6. Spread operator should be inside an array if you are dealing with arrays ([...tasks,setTasks])
+7. Do not forget to put () after trim like newTasks.trim()
+8. For map function you need to put two brackes like this tasks.map((task,index => {tasks}))
+9. If you are declaring a parameter that you are not going to use you can put '_' for it instead of parameter name
+10. We cannot put onClick = {deleteTask(index)}; as this would call the function right away instead we need to add arrow function {() => deleteTask(index)}

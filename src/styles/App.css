@@ -1,0 +1,99 @@
+body {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .main-heading {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  .input-task {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .buttons-wrapper{
+    display: flex;
+    gap: 1em;
+  }
+  
+  .add-task-input {
+    width: 30%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #778da9;
+    background-color: #415a77;
+    color: #e0e1dd;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"],
+  .clear-task-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+  }
+  
+  .clear-task-btn {
+    background-color: #780000;
+  }
+  
+  .task-list {
+    width: 30%;
+    padding: 0;
+  
+    margin: auto;
+    list-style-type: decimal; /* Keeps the decimal numbering */
+  }
+  
+  .task-item {
+
+    display: flex; /* Apply flex layout here */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #415a77;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #778da9;
+  }
+  
+  /* Using ::marker to style the list marker (numbering) */
+  .task-list li::marker {
+    color: #e63946; /* Customize the marker color */
+    font-weight: bold; /* Optional: Make the number bold */
+    font-size: 1.2rem; /* Optional: Adjust the size of the marker */
+  }
+  
+  .task-item-text {
+    flex-grow: 1;
+    text-align: left;
+    color: #e0e1dd;
+  }
+  
+  .delete-task-item-btn {
+    background: none;
+    border: none;
+    color: #e63946;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .date-time-wrapper {
+    width: 30%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}

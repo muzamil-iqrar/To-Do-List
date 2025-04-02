@@ -1,0 +1,19 @@
+{
+  "name": "02.-to-do-list",
+  "version": "1.0.0",
+  
+  "scripts": {
+    "start": "parcel public/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
